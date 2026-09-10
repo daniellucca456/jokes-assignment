@@ -5,37 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
-
-  <script src="https://cdn.tailwindcss.com"></script>
   
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <title>Assignment on Jokes</title>
+  <title>Rating card</title>
 </head>
 
-<body class="bg-blue-200 min-h-screen flex items-center justify-center p-4 sm:p-6 font:[Poppins]">
-
-  <!-- Joke Card -->
-  <div class="bg-gray-500 w-full max-w-md rounded-2xl p-6 sm:p-8 md:p-10 text-center shadow-lg">
-
-    <h1 class="text-white text-2xl sm:text-3xl font-bold">
-      Random Jokes 🤣
-    </h1>
-
-    <p id="joke" class="text-white text-base sm:text-lg leading-relaxed mt-6 min-h-[80px] flex items-center justify-center">
-      Click the button to get a joke 🤣
-    </p>
-
-    <button
-      id="jokebtn"
-      class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg mt-6 w-full sm:w-auto hover:bg-blue-700 transition"
-    >
-      Get Joke
-    </button>
-
+<body class="bg-gray-500 w-full min-h-screen flex justify-center items-center p-6">
+  
+<section id="rating-component" class="w-full max-w-md">
+  
+  <div class="bg-blue-300 p-6 gap-6 rounded-2xl">
+    
+    <img class="bg-gray-500 p-2 gap-4 w-12 h-12 rounded-2xl mb-8" src="https://res.cloudinary.com/wr4dvd7b/image/upload/v1788995752/1000679287-removebg-preview_txurbc.png" alt="Star icon" />
+    
+    
+    <h1 class="text-white text-xl text-bold p-2 mb-6 uppercase font-black italic font-[Poppins]">How was the last Family meeting?</h1>
+    
+    <p class="text-gray-500 text-semibold p-2 mb-4 font-[Poppins] italic font-light">Help us with your rating experience, so that we would plan and look forward to the next one.
+    Your opinions are considered important</p>
+    
+    
+    <div class="gap-6 flex cols-5 p-4 flex justify-between mb-4">
+      
+    <button type="" value="1" class=" rating w-full bg-white text-gray-700 py-3 rounded-xl transition duration-300 hover:bg-gray-100 hover:shadow-md focus:outline-none focus:ring-4 focus:ring-white/50 active:scale-95">1</button>
+    
+    <button type="button" value="2" class=" rating w-full bg-white text-gray-700 py-3 rounded-xl
+transition duration-300
+hover:bg-gray-100 hover:shadow-md
+focus:outline-none focus:ring-4 focus:ring-white/50
+active:scale-95">2</button>
+    
+    <button type="button" value="3"  class="rating w-full bg-white text-gray-700 py-3 rounded-xl
+transition duration-300
+hover:bg-gray-100 hover:shadow-md
+focus:outline-none focus:ring-4 focus:ring-white/50
+active:scale-95">3</button>
+    
+<button type="button" value="4" class=" rating w-full bg-white text-gray-700 py-3 rounded-xl
+transition duration-300
+hover:bg-gray-100 hover:shadow-md
+focus:outline-none focus:ring-4 focus:ring-white/50
+active:scale-95">4</button>
+    
+    <button type="button" value="5" class=" rating w-full bg-white text-gray-700 py-3 rounded-xl
+transition duration-300
+hover:bg-gray-100 hover:shadow-md
+focus:outline-none focus:ring-4 focus:ring-white/50
+active:scale-95">5</button>
+    </div>
+    
+    <div>
+     <button type="button" id="submit" class=" w-full bg-white text-gray-700 py-3 rounded-xl
+transition duration-300
+hover:bg-gray-100 hover:shadow-md
+focus:outline-none focus:ring-4 focus:ring-white/50
+active:scale-95">Submit</button>
+    </div>
+   
   </div>
+  
+
+
+ 
+  
+  </section>
+  
+
+
+  
+  <section id="thank-you-component" class="hidden bg-blue-300 text- w-full max-w-md flex flex-col gap-4 p-6 sm:gap-6 sm:p-6 rounded-2xl mx-auto items-center text-center">
+    
+    <div>
+  
+  <img src="https://res.cloudinary.com/wr4dvd7b/image/upload/v1788995772/1000679288-removebg-preview_nurgiz.png" alt="thank-you" /></div>
+  
+  
+<div class="bg-blue-300 px-4 py-1 rounded-full">
+  <p id="score"></p>
+  
+</div>
+
+
+<h1 class="text-xl font-black italics font-[Poppins] text-white sm:text-2xl">Thank you!</h1>
+
+
+<p class="text-sm text-gray-500 leading-6 sm:text-base font-light text-semibold font-[Poppins]">
+  We appreciate you taking the time to give a rating. If you ever need
+  more support, don't hesitate to get in touch!
+</p>
+    
+  </section>
 
   <script src="script.js"></script>
 
